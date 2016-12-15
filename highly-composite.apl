@@ -12,6 +12,9 @@
 	return←(+/return)=1
 ⍝ Represent whether the sum equals one.
 
+⍝	return←(+/((({+/~((⍳⍵)|⍵)>0}¨⍳N)-(+/~((⍳N)|N)>0))≥0))=1
+⍝ This can alternatively be written as one line.
+
 ∇
 
 highlyComposite 5040
