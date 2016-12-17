@@ -17,6 +17,27 @@
 
 ∇
 
+∇return←allHighlyComposite N
+
+	array←highlyComposite¨⍳N
+⍝ Create an array of all numbers 1 to N and whether they are highly composite.
+
+	array←array×⍳⍴array
+⍝ Multiply each element of the array by its position.
+
+	array←array[⍋array]
+⍝ Order the array.
+
+	index←-(⍴array)-(array⍳1)-1
+⍝ Create an index for the position before 1 in the ordered array.
+
+	return←index↑array
+⍝ Return the taken array.
+
+∇
+
 highlyComposite 5040
+
+allHighlyComposite 1000
 
 )OFF
