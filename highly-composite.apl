@@ -37,7 +37,9 @@
 ∇
 
 highlyComposite 5040
+⍝ Checks whether a given number is a highly composite number.
 
 allHighlyComposite 1000
+⍝ Shows an array of highly composite numbers up to a given number.
 
 )OFF
