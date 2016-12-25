@@ -17,7 +17,7 @@
 
 ∇
 
-∇return←allHighlyComposite N
+∇return←listHighlyComposite N
 
 	array←highlyComposite¨⍳N
 ⍝ Create an array of whether all numbers 1 to N are highly composite.
@@ -49,7 +49,7 @@ output/(N 'is highly composite.')
 
 N←1000
 
-output←allHighlyComposite N
+output←listHighlyComposite N
 ⍝ Returns an array of highly composite numbers up to a given number.
 
 ((⍴output)>0)/('There are' (⍴output) 'highly composite numbers up to' N ':' output)
