@@ -39,12 +39,12 @@
 N←5040
 
 output←HighlyComposite N
-⍝ Returns whether a given number is a highly composite number.
+⍝ Returns whether a given number is highly composite.
 
-output/(N 'is highly composite.')
+output/(N 'is a highly composite number.')
 ⍝ If the given number is highly composite, this message will output.
 
-(~output)/(N 'is not highly composite.')
+(~output)/(N 'is not a highly composite number.')
 ⍝ If the given number is not highly composite, this message will output.
 
 N←1000
