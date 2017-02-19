@@ -1,4 +1,4 @@
-∇return←highlyComposite N
+∇return←HighlyComposite N
 
 	factors←{+/~((⍳⍵)|⍵)>0}
 ⍝ Create a function to return the number of factors of a number.
@@ -17,9 +17,9 @@
 
 ∇
 
-∇return←listHighlyComposite N
+∇return←ListHighlyComposite N
 
-	array←highlyComposite¨⍳N
+	array←HighlyComposite¨⍳N
 ⍝ Create an array of whether all numbers 1 to N are highly composite.
 
 	array←array×⍳⍴array
@@ -38,7 +38,7 @@
 
 N←5040
 
-output←highlyComposite N
+output←HighlyComposite N
 ⍝ Returns whether a given number is a highly composite number.
 
 output/(N 'is highly composite.')
@@ -49,7 +49,7 @@ output/(N 'is highly composite.')
 
 N←1000
 
-output←listHighlyComposite N
+output←ListHighlyComposite N
 ⍝ Returns an array of highly composite numbers up to a given number.
 
 ((⍴output)>0)/('There are' (⍴output) 'highly composite numbers up to' N ':' output)
