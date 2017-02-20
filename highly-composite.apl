@@ -35,10 +35,10 @@ N←5040
 output←HighlyComposite N
 ⍝ Returns whether a given number is highly composite.
 
-output/(N 'is a highly composite number.')
+output/N 'is a highly composite number.'
 ⍝ If the given number is highly composite, this message will output.
 
-(~output)/(N 'is not a highly composite number.')
+(~output)/N 'is not a highly composite number.'
 ⍝ If the given number is not highly composite, this message will output.
 
 N←1000
@@ -46,10 +46,10 @@ N←1000
 output←ListHighlyComposite N
 ⍝ Returns an array of highly composite numbers up to a given number.
 
-((⍴output)>0)/('There are' (⍴output) 'highly composite numbers up to' N ':' output)
+((⍴output)>0)/'There are' (⍴output) 'highly composite numbers up to' N ':' output
 ⍝ If there are greater than zero highly composite numbers up to a given number, this message will output.
 
-((⍴output)=0)/('There are zero highly composite numbers up to' N '.')
+((⍴output)=0)/'There are zero highly composite numbers up to' N '.'
 ⍝ If there are zero highly composite numbers up to a given number, this message will output.
 
 )OFF
