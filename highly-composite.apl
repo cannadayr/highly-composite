@@ -25,14 +25,8 @@
 	array←array×⍳⍴array
 ⍝ Multiply each element of the array by its position.
 
-	array←array[⍋array]
-⍝ Order the array.
-
-	index←-(⍴array)-(array⍳1)-1
-⍝ Create an index for the position before 1 in the ordered array.
-
-	return←index↑array
-⍝ Return the taken array.
+	return←∊{(⍵>0)/⍵}¨array
+⍝ Return the array of elements which are greater than zero.
 
 ∇
 
