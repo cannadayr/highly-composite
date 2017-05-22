@@ -35,21 +35,21 @@ input←5040
 output←HighlyComposite input
 ⍝ Returns whether a given number is highly composite.
 
-output/input 'is a highly composite number.'
+∊output/input 'is a highly composite number.'
 ⍝ If the given number is highly composite, this message will output.
 
-(~output)/input 'is not a highly composite number.'
+∊(~output)/input 'is not a highly composite number.'
 ⍝ If the given number is not highly composite, this message will output.
 
-input←1000
+input←100
 
 output←ListHighlyComposite input
 ⍝ Returns an array of highly composite numbers up to a given number.
 
-((⍴output)>0)/'There are' (⍴output) 'highly composite numbers up to' input ':' output
+∊((⍴output)>0)/'There are' (⍴output) 'highly composite numbers up to' input ':' output
 ⍝ If there are greater than zero highly composite numbers up to a given number, this message will output.
 
-((⍴output)=0)/'There are zero highly composite numbers up to' input '.'
+∊((⍴output)=0)/'There are zero highly composite numbers up to' input '.'
 ⍝ If there are zero highly composite numbers up to a given number, this message will output.
 
 )OFF
